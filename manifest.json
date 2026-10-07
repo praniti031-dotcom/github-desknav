@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub DeskNav",
+    "version": "1.0",
+    "description": "Phone-style navigation for GitHub.",
+
+    "permissions": [
+        "storage"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/*"],
+            "js": ["content.js"],
+            "css": ["style.css"]
+        }
+    ]
+}
